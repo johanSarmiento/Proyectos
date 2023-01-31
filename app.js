@@ -1,57 +1,68 @@
-// const fs = require("fs")
-// const json = fs.readFileSync("preguntas.json").toString();
-// const preguntas = JSON.parse(json)
-// console.log(preguntas)
+
+import Api from './preguntas.json' assert { type: 'json' };
+console.log(typeof Api);
+//CREANDO ELEMENTOS 
+const Body = document.querySelector('body');
+const contenedorQuiz = document.createElement('div');
+const Quiz = document.createElement('div');
+const contPreguntas  = document.createElement('div');
+const ContRespuesta = document.createElement('div');
+const preguntas = document.createElement('h2'); 
+const respuestaUno = document.createElement('button');
+const respuestaDos = document.createElement('button');
+const respuestaTres = document.createElement('button');
+const respuestaCuatro = document.createElement('button');
+const enviar = document.createElement('button');
+
+//asignando clases
+contenedorQuiz.setAttribute('class','Contenedor');
+Quiz.setAttribute('class','Contenedor Quiz');
+preguntas.setAttribute('class','Preguntas');
+ContRespuesta.setAttribute('class','Contenedor contRespuesta');
+contPreguntas.setAttribute('class','Contenedor contPreguntas');
+respuestaUno.setAttribute('class','btn btnPreguntaUno');
+respuestaDos.setAttribute('class','btn btnPreguntaDos');
+respuestaTres.setAttribute('class','btn btnPreguntaDos');
+respuestaCuatro.setAttribute('class','btn btnPreguntaDos');
+enviar.setAttribute('class','btn btnEnviar');
+
+// AGREGAR HIJOS
+Body.appendChild(contenedorQuiz);
+contenedorQuiz.appendChild(Quiz);
+Quiz.appendChild(contPreguntas);
+Quiz.appendChild(ContRespuesta);
+Quiz.appendChild(enviar);
+contPreguntas.appendChild(preguntas);
+ContRespuesta.appendChild(respuestaUno);
+ContRespuesta.appendChild(respuestaDos);
+ContRespuesta.appendChild(respuestaTres);
+ContRespuesta.appendChild(respuestaCuatro);
+//AGREGAR TEXTOS
+enviar.textContent = "Siguiente"
 
 
-// const myjson = `[
-//     {
-//         "preguntaUno" : "¿en que año se descrubrio america?",
-//         "RespuestaUno" : "1492",
-//         "RespuestaDos" : "1492",
-//         "RespuestaTres" : "1492",
-//         "RespuestaCuatro" : "1492",
-//         "RespuestaCorect" : "RespuestaUno"
-//     },
 
-//     {
-//         "preguntaUno" : "¿Rio mas largo del mundo?",
-//         "RespuestaUno" : "Rio negro",
-//         "RespuestaDos" : "Rio nilo",
-//         "RespuestaTres" : "Rio de mi casa",
-//         "RespuestaCuatro" : "Rio amazonas",
-//         "RespuestaCorect" : "RespuestaCuatro"
-//     },
+//FUNCIONAES
+let posicion=0
 
-//     {
-//         "preguntaUno" : "¿Cuanto vale PI?",
-//         "RespuestaUno" : "3.1417",
-//         "RespuestaDos" : "3.1416",
-//         "RespuestaTres" : "3.1415",
-//         "RespuestaCuatro" : "3.1614",
-//         "RespuestaCorect" : "RespuestaDos"
-//     },
+function llenarPrguntas (api) {
+    if (posicion<=api.length) {
+        enviar.addEventListener("click",()=>{posicion++
+        preguntas.innerHTML = api[posicion].preguntaUno 
+        respuestaUno.innerHTML = api[posicion].RespuestaUno
+        respuestaDos.innerHTML = api[posicion].RespuestaDos
+        respuestaTres.innerHTML = api[posicion].RespuestaTres
+        respuestaCuatro.innerHTML = api[posicion].RespuestaCuatro
+        })   
+    }
+    console.log(posicion);
+}
 
-//     {
-//         "preguntaUno" : "¿?",
-//         "RespuestaUno" : "1492",
-//         "RespuestaDos" : "1492",
-//         "RespuestaTres" : "1492",
-//         "RespuestaCuatro" : "1492",
-//         "RespuestaCorect" : "RespuestaUno"
-//     },
-//     {
-//         "preguntaUno" : "¿Hammer es buena persona?",
-//         "RespuestaUno" : "si, muy buena persona",
-//         "RespuestaDos" : "Definamos 'buena persona' ",
-//         "RespuestaTres" : "no",
-//         "RespuestaCuatro" : "Tal vez",
-//         "RespuestaCorect" : "RespuestaDos"
-//     }
-// ]`
-// const preguntas = JSON.parse(myjson)
-// console.log(preguntas);
+llenarPrguntas(Api);
 
-import * as module from './preguntas.json' assert {type : 'json'}
 
-console.log(preguntas.preguntaUno);
+
+
+
+
+
