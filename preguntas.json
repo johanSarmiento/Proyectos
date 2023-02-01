@@ -1,11 +1,11 @@
 [
     {
-        "preguntaUno" : "¿en que año se descrubrio america?",
+        "preguntaUno" : "¿En que año se descrubrio america?",
         "RespuestaUno" : "1492",
         "RespuestaDos" : "1589",
         "RespuestaTres" : "2022",
         "RespuestaCuatro" : "1494",
-        "RespuestaCorect" : "RespuestaUno"
+        "RespuestaCorect" : "1492"
     },
 
     {
@@ -14,7 +14,7 @@
         "RespuestaDos" : "Rio nilo",
         "RespuestaTres" : "Rio de mi casa",
         "RespuestaCuatro" : "Rio amazonas",
-        "RespuestaCorect" : "RespuestaCuatro"
+        "RespuestaCorect" : "Rio amazonas"
     },
 
     {
@@ -23,7 +23,7 @@
         "RespuestaDos" : "3.1416",
         "RespuestaTres" : "3.1415",
         "RespuestaCuatro" : "3.1614",
-        "RespuestaCorect" : "RespuestaDos"
+        "RespuestaCorect" : "3.1416"
     },
 
     {
@@ -32,7 +32,7 @@
         "RespuestaDos" : "1492",
         "RespuestaTres" : "1492",
         "RespuestaCuatro" : "1492",
-        "RespuestaCorect" : "RespuestaUno"
+        "RespuestaCorect" : "1492"
     },
     {
         "preguntaUno" : "¿Hammer es buena persona?",
@@ -40,6 +40,6 @@
         "RespuestaDos" : "Definamos 'buena persona' ",
         "RespuestaTres" : "no",
         "RespuestaCuatro" : "Tal vez",
-        "RespuestaCorect" : "RespuestaDos"
+        "RespuestaCorect" : "Definamos 'buena persona' "
     }
 ]
