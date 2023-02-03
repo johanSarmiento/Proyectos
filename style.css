@@ -3,58 +3,103 @@
     margin: 0;
     box-sizing: border-box;
 }
-.Contenedor{
+
+.contenedor{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
 }
-.Quiz{
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
+.contCalcu{
+    background-color: #E1E1E1;
 }
-.contPreguntas{
-    z-index: 1;
-    width: 100%;
-    height: 40%;
-    background-color: #2c1e55;
-    border-radius: 0 0 300px 300px;
-    box-shadow: 0 10px 50px #2c1e55;
-    color: white;
+.calculadora{
+    width: 22%;
+    height: 75vh;
+    background-color: #37465B;
+    box-shadow: 15px 15px 50px black;
 }
-.contRespuesta{
+.panel{
     width: 100%;
-    height: 60%;
-    background-color: #fff;
+    height: 30%;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.contBotones{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,70px); 
+    grid-template-areas: 
+    "btnEliminar btnEliminar btnDividir btnDividir"
+    "btnSiete    btnOcho     btnNueve   btnMultiplicar"
+    "btnCuatro   btnCinco    btnSeis    btnRestar"
+    "btnUno      btnDos      btnTres    btnSuma"
+    "btnPunto    btnCero     btnIgual   btnSuma";
 }
 .btn{
-    width: 50%;
-    height: 15%;
-    margin: 10px 0;
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0px 10px 20px #b3b2b2;
+    background-color: #37465B;
     border: none;
-}
+    color: white;
+    font-size: 1.3em;
+    transition: 0.3s ;
+} 
 .btn:hover{
-    box-shadow: 0 10px 40px #2c1e55;
+    background-color: #5A656F;
+    padding: 30px;
+    transition: 0.3s all ease-in-out;
 }
-.contResult{
-    width: 100%;
-    height: 100vh;
-    background-color: #2c1e55;
-    transition: 3s all ;
+.btnCero{           
+    grid-area: btnCero;    
 }
-.result{
-    color: #fff;
-    font-size: 3em;
+.btnUno{
+    grid-area: btnUno;    
 }
-.frase{
-    color: #fff;
-    font-size: 1.5em;
-    margin: 10px 20%;
+.btnDos{
+    grid-area: btnDos;    
 }
+.btnTres{
+    grid-area: btnTres;    
+}
+.btnCuatro{
+    grid-area: btnCuatro;    
+}
+.btnCinco{
+    grid-area: btnCinco;    
+}
+.btnSeis{
+    grid-area: btnSeis;    
+}
+.btnSiete{
+    grid-area: btnSiete;    
+}
+.btnOcho{
+    grid-area: btnOcho;    
+}
+.btnNueve{
+    grid-area: btnNueve;    
+}
+.btnEliminar{
+    grid-area: btnEliminar;    
+}
+.btnSuma{
+    grid-area: btnSuma;    
+}
+.btnRestar{
+    grid-area: btnRestar;    
+}
+.btnMultiplicar{
+    grid-area: btnMultiplicar;    
+}
+.btnDividir{
+    grid-area: btnDividir;    
+}
+.btnPunto{
+    grid-area: btnPunto;    
+}
+.btnIgual{
+    grid-area: btnIgual;    
+}
+

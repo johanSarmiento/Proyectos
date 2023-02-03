@@ -1,122 +1,92 @@
+// CREACION DE ELEMENTOS 
+const body = document.querySelector("body")
+const contendorCalcu = document.createElement("div")
+const calculadora = document.createElement("div")
+const panel = document.createElement("div")
+const contBotones = document.createElement("div")
+const btnCero = document.createElement("button")
+const btnUno = document.createElement("button")
+const btnDos = document.createElement("button")
+const btnTres = document.createElement("button")
+const btnCuatro = document.createElement("button")
+const btnCinco = document.createElement("button")
+const btnSeis = document.createElement("button")
+const btnSiete = document.createElement("button")
+const btnOcho = document.createElement("button")
+const btnNueve = document.createElement("button")
+const btnSumar = document.createElement("button")
+const btnRestar = document.createElement("button")
+const btnMultiplicar = document.createElement("button")
+const btnDividir = document.createElement("button")
+const btnEliminar = document.createElement("button")
+const btnPunto = document.createElement("button")
+const btnIgual = document.createElement("button")
+//ATRIBUTOS A LOS ELEMTOS
+contendorCalcu.setAttribute("class","contenedor contCalcu")
+calculadora.setAttribute("class","contenedor calculadora")
+panel.setAttribute("class","contenedor panel")
+contBotones.setAttribute("class","contBotones")
+btnCero.setAttribute("class","btn btnCero")
+btnUno.setAttribute("class","btn btnUno")
+btnDos.setAttribute("class","btn btnDos")
+btnTres.setAttribute("class","btn btnTres")
+btnCuatro.setAttribute("class","btn btnCuatro")
+btnCinco.setAttribute("class","btn btnCinco")
+btnSeis.setAttribute("class","btn btnSeis")
+btnSiete.setAttribute("class","btn btnSiete")
+btnOcho.setAttribute("class","btn btnOcho")
+btnNueve.setAttribute("class","btn btnNueve")
+btnSumar.setAttribute("class","btn btnSuma")
+btnRestar.setAttribute("class","btn btnRestar")
+btnMultiplicar.setAttribute("class","btn btnMultiplicar")
+btnDividir.setAttribute("class","btn btnDividir")
+btnEliminar.setAttribute("class","btn btnEliminar")
+btnPunto.setAttribute("class","btn btnPunto")
+btnIgual.setAttribute("class","btn btnIgual")
+//ASIGNANDO HIJOS
+body.appendChild(contendorCalcu)
+contendorCalcu.appendChild(calculadora)
+calculadora.appendChild(panel)
+calculadora.appendChild(contBotones)
+contBotones.appendChild(btnCero)
+contBotones.appendChild(btnUno)
+contBotones.appendChild(btnDos)
+contBotones.appendChild(btnTres)
+contBotones.appendChild(btnCuatro)
+contBotones.appendChild(btnCinco)
+contBotones.appendChild(btnSeis)
+contBotones.appendChild(btnSiete)
+contBotones.appendChild(btnOcho)
+contBotones.appendChild(btnNueve)
+contBotones.appendChild(btnSumar)
+contBotones.appendChild(btnRestar)
+contBotones.appendChild(btnMultiplicar)
+contBotones.appendChild(btnDividir)
+contBotones.appendChild(btnEliminar)
+contBotones.appendChild(btnPunto)
+contBotones.appendChild(btnIgual)
 
-import Api from './preguntas.json' assert { type: 'json' };
-console.log(typeof Api);
-//CREANDO ELEMENTOS 
-const Body = document.querySelector('body');
-const contenedorQuiz = document.createElement('div');
-const Quiz = document.createElement('div');
-const contPreguntas  = document.createElement('div');
-const ContRespuesta = document.createElement('div');
-const preguntas = document.createElement('h2'); 
-const respuestaUno = document.createElement('button');
-const respuestaDos = document.createElement('button');
-const respuestaTres = document.createElement('button');
-const respuestaCuatro = document.createElement('button');
-
-//asignando clases
-contenedorQuiz.setAttribute('class','Contenedor');
-Quiz.setAttribute('class','Contenedor Quiz');
-preguntas.setAttribute('class','Preguntas');
-ContRespuesta.setAttribute('class','Contenedor contRespuesta');
-contPreguntas.setAttribute('class','Contenedor contPreguntas');
-respuestaUno.setAttribute('class','btn btnPreguntaUno');
-respuestaDos.setAttribute('class','btn btnPreguntaDos');
-respuestaTres.setAttribute('class','btn btnPreguntaDos');
-respuestaCuatro.setAttribute('class','btn btnPreguntaDos');
-
-// AGREGAR HIJOS
-Body.appendChild(contenedorQuiz);
-contenedorQuiz.appendChild(Quiz);
-Quiz.appendChild(contPreguntas);
-Quiz.appendChild(ContRespuesta);
-contPreguntas.appendChild(preguntas);
-ContRespuesta.appendChild(respuestaUno);
-ContRespuesta.appendChild(respuestaDos);
-ContRespuesta.appendChild(respuestaTres);
-ContRespuesta.appendChild(respuestaCuatro);
-//AGREGAR TEXTOS
+//CONTENIDO
+btnUno.textContent = "1"
+btnDos.textContent = "2"
+btnTres.textContent = "3"
+btnCuatro.textContent = "4"
+btnCinco.textContent = "5"
+btnSeis.textContent = "6"
+btnSiete.textContent = "7"
+btnOcho.textContent = "8"
+btnNueve.textContent = "9"
+btnSumar.textContent = "+"
+btnRestar.textContent = "-"
+btnMultiplicar.textContent = "x"
+btnDividir.textContent = "/"
+btnEliminar.textContent = "C"
+btnCero.textContent = "0"
+btnIgual.textContent = "="
+btnPunto.textContent = "."
 
 
 
-//FUNCIONAES
-let posicion=0 , contCorrectas=0
-
-function llenarPrguntas (api) {
-    if (posicion<=(api.length+1)) {
-        preguntas.innerHTML = api[posicion].preguntaUno 
-        respuestaUno.innerHTML = api[posicion].RespuestaUno
-        respuestaDos.innerHTML = api[posicion].RespuestaDos
-        respuestaTres.innerHTML = api[posicion].RespuestaTres
-        respuestaCuatro.innerHTML = api[posicion].RespuestaCuatro 
-    }
-    console.log(posicion);
-    console.log(api.length-1);
-}
-
-function Respuestas(api) {
-    respuestaUno.addEventListener("click",()=>{
-        if (api[posicion].RespuestaCorect == api[posicion].RespuestaUno) {
-            alert(api[posicion].RespuestaCorect)
-            contCorrectas++
-        }
-        posicion++
-        Resultado( contCorrectas , Api,posicion)
-        llenarPrguntas(Api);
-    })
-    respuestaDos.addEventListener("click",()=>{
-        if (api[posicion].RespuestaCorect == api[posicion].RespuestaDos) {
-            alert(api[posicion].RespuestaCorect)
-            contCorrectas++
-        }
-        posicion++
-        Resultado( contCorrectas , Api,posicion)
-        llenarPrguntas(Api);
-    })
-    respuestaTres.addEventListener("click",()=>{
-        if (api[posicion].RespuestaCorect == api[posicion].RespuestaTres) {
-            alert(api[posicion].RespuestaCorect)
-            contCorrectas++
-        }
-        posicion++
-        Resultado( contCorrectas , Api,posicion)
-        llenarPrguntas(Api);
-    })
-    respuestaCuatro.addEventListener("click",()=>{
-        if (api[posicion].RespuestaCorect == api[posicion].RespuestaCuatro) {
-            alert(api[posicion].RespuestaCorect)
-            contCorrectas++
-        }
-        posicion++
-        Resultado( contCorrectas , Api, posicion)
-        llenarPrguntas(Api);
-    })
-}
-function Resultado( contador, api,posicion) {
-    if (posicion===(api.length)) {
-        const contResult = document.createElement("div")
-        contResult.setAttribute("class","Contenedor contResult")
-        const result = document.createElement("p")
-        const frase = document.createElement("p")
-        result.setAttribute("class","result")
-        frase.setAttribute("class","frase")
-        contenedorQuiz.removeChild(Quiz)
-        contenedorQuiz.appendChild(contResult)
-        contResult.appendChild(result)
-        contResult.appendChild(frase)
-        result.innerHTML = "TU RESULTADO ES: "+ contador +"/"+api.length 
-        if (contador<(api.length/2)) {
-            frase.innerHTML = "vaya y duerma pirobo"
-        }else if (contador===(api.length/2)) {
-            frase.innerHTML = "mehhh, ni tan bien, ni tan mal"
-        }else if(contador===api.length){
-            frase.innerHTML = "muy bien amigazo amiguito amigo genio crack ídolo titán bestia rey capitán de navío capitán de corbe facha superhéroe locura guerrero toro gladiador pantera que tenga un excelente dia   "
-        }
-       
-    }
-}
-
-Respuestas(Api)
-llenarPrguntas(Api); 
 
 
 
