@@ -54,7 +54,7 @@ btnSeis.setAttribute("value","6")
 btnSiete.setAttribute("value","7")
 btnOcho.setAttribute("value","8")
 btnNueve.setAttribute("value","9")
-textArea.setAttribute("type","text")
+textArea.setAttribute("type","number")
 textArea.setAttribute("class","textArea")
 textArea.setAttribute("id","texto")
 //ASIGNANDO HIJOS
@@ -102,12 +102,17 @@ btnPunto.textContent = "."
 
 
 //FUNCIONES DE LA CALCUALDORA
+let valor = document.getElementById("texto")
 document.addEventListener("keydown", (event)=>{
-    console.log(event);
-    // let valor = event.key
-    document.getElementById("texto").innerHTML = "hola"
-
+document.getElementById("texto").focus()
+if (event.keyCode===13) {
+    alert("hola")
+    console.log(valor.value);
+    console.log(eval(valor.value));
+}
 })
+
+
 
 
 
