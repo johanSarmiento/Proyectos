@@ -11,15 +11,15 @@ cuerpo.appendChild(btnAtras)
 btnSiguiente.textContent = "Siguiente"
 btnAtras.textContent = "Atras"
 
-
 async function llamarApi(id) {
-    let api = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-    let pokemos = await api.json()
-    console.log(pokemos);   
+    const api = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    const pokemos = await api.json()
+    console.log(pokemos);
     llenarCarta(pokemos)
 }
 
 function llenarCarta(data) {
+
 const body = document.getElementById("cartas")
 const nav  = document.getElementById("nav")
 const cartasPokemon = document.createElement("div")
@@ -28,7 +28,6 @@ const contInfo = document.createElement("div")
 const imgPokemon = document.createElement("img")
 const nombrePokemon = document.createElement("h2")
 const tipoPokemon = document.createElement("p")
-// const tipoPokemon2 = document.createElement("p")
 const numPokemon = document.createElement("p")
 //ASIGNANDO LOS ATRIBUTOS
 cartasPokemon.setAttribute("class", "contenedor carta")
@@ -37,7 +36,6 @@ contInfo.setAttribute("class", "contenedor contInfo")
 imgPokemon.setAttribute("class", "imgPokemon")
 nombrePokemon.setAttribute("class", "nombrePokemon")
 tipoPokemon.setAttribute("class", "tipoPokemon")
-// tipoPokemon2.setAttribute("class", "tipoPokemon2")
 numPokemon.setAttribute("class", "numPokemon")
 //ASIGNANDO HIJOS
 body.appendChild(cartasPokemon)
@@ -48,10 +46,8 @@ contImg.appendChild(imgPokemon)
 contInfo.appendChild(nombrePokemon)
 contInfo.appendChild(tipoPokemon)
 // contInfo.appendChild(tipoPokemon2)
-
 nombrePokemon.innerHTML = data.name 
 tipoPokemon.innerHTML = data.types[0].type.name 
-// tipoPokemon2.innerHTML = data.types[1].type.name 
 numPokemon.innerHTML = "#"+data.id.toString().padStart(3, "0") 
 imgPokemon.setAttribute("src", data.sprites.front_default)
 //ENGRANDAR IMAGEN
@@ -62,16 +58,11 @@ cartasPokemon.addEventListener("click", () => {
     nav.remove()
     body.remove()
     EngrandarInfo(data,data.id)
-
 })
 
 }
 
-function interar() {
-    for(let i = 1; i <= 52 ; i++) {
-        llamarApi(i)
-        }   
-}
+
 function EngrandarInfo(info,idPokemon) {
     const body = document.getElementById("pokedex")
     const fondo = document.createElement("div")
@@ -80,6 +71,12 @@ function EngrandarInfo(info,idPokemon) {
     const contDatos = document.createElement("div")
     const newImg = document.createElement("img")
     const nombrePokemon = document.createElement("h2")
+    const tipoPokemon = document.createElement("p")
+    const biologia = document.createElement("h2")
+    const especie = document.createElement("p")
+    const altura = document.createElement("p")
+    const weight = document.createElement("p")
+    const anatomia = document.createElement("p")
     //ASIGNANDO LOS ATRIBUTOS
     fondo.setAttribute("class", "contenedor fondo")
     newCarts.setAttribute("class", "contenedor newCarta")
@@ -94,18 +91,25 @@ function EngrandarInfo(info,idPokemon) {
     body.appendChild(fondo)
     fondo.appendChild(newCarts)
     newCarts.appendChild(header)
+    header.appendChild(nombrePokemon)
     header.appendChild(newImg)
     newCarts.appendChild(contDatos)
-    contDatos.appendChild(nombrePokemon)
+    contDatos.appendChild(biologia)
+    contDatos.appendChild(tipoPokemon)
+    contDatos.appendChild(especie)
+    contDatos.appendChild(weight)
+    //TEXTO DEL OS ELEMENTOS
+    nombrePokemon.innerHTML = info.name
+    tipoPokemon.innerHTML = "TIPO : " + info.types[0].type.name 
+    biologia.innerHTML = "BIOLOGIA"
+    especie.innerHTML = "Especie :"+info.species.name
 
 
-
-
-
-
+ 
     llamarApi(idPokemon)
 }
-
-interar()
+for(let i = 1 ; i <= 52;i++){
+    llamarApi(i)
+}
 
 
