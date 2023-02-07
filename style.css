@@ -4,18 +4,22 @@
     box-sizing: border-box;
 }
 .contenedor{
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.Pokedex{
     width: 100%;
-    height: 50vh;
-    background-color: aquamarine;
+    height: auto;
+    background-color: #191A19;
 }
-
-.buscar{
-    background-color: brown;
+.navPokedex{
+    padding: 30px;
 }
-.lol{
-    background-color: red;
+.title{
+    color: white;
+    font-size: 2.5rem;
 }
