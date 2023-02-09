@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.participante1{
+    font-size: 7em;
+    color: red;
+    margin-bottom: 50px;
+}
+.participante2{
+    font-size: 7em;
+    color: blue;
+    margin-bottom: 50px;
+}
+.contTriqui{
+    height: 100vh;
+    background-color: rgb(19, 18, 18);
+}
+.contInicio{
+    height: 100vh;
+    background-color: rgb(19, 18, 18);
+}
+.triqui{
+    width: 30%;
+    height: 50%;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+.inicio{
+    width: 35%;
+    height: 30%;
+    background: rgb(29, 28, 28);
+    border: 6px solid;
+    border-image-slice: 1;
+    border-image-source:linear-gradient(45deg, rgba(226,40,40,1) 0%, rgba(29,48,182,1) 100%);
+    color: white;
+    box-shadow: 0px 0px 50px rgb(71, 66, 66) ;
+}
+.contBotones{
+    height: 50%;
+    flex-direction: row;
+}
+.contBotones .btn{
+    width: 30%;
+    height: 50%;
+    margin: 20px;
+    font-size: 2em;
+}
+.btn1{
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    background-color: rgb(53, 50, 50);
+    border: none;
+    margin: 5px 5px;
+    box-shadow: 0px 0px 60px rgb(255, 0, 0);
+    font-size: 2em;
+}
+.btn2{
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    background-color: rgb(53, 50, 50);
+    border: none;
+    margin: 5px 5px;
+    box-shadow: 0px 0px 60px rgba(0, 4, 255, 0.616);
+    font-size: 2em;
+}
+.ganador1{
+    height: 100vh;
+    background-color: red;
+}
+.ganador2{
+    height: 100vh;
+    background-color: blue;
+}
