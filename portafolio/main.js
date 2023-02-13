@@ -10,13 +10,13 @@ const inicio = `
             </div>
         </div>
         <div class="contenedor navRight">
-            <ul class="contenedor listIcon"> 
-                <li class="icon icInicio fondo"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
-                <li class="icon icSoy"><a href="#"><img class="iconSoy" src="./sources/icon/persona.png" alt="perfil"></li>
-                <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/maletin.png" alt="perfil"></li>
-                <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/correo.png" alt="perfil"></li>
-            </ul>
-        </div>
+        <ul class="contenedor listIcon"> 
+            <li class="icon icInicio fondo"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
+            <li class="icon icSoy"><a href="#"><img class="iconSoy" src="./sources/icon/icons8-user-32.png" alt="perfil"></li>
+            <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/icons8-maletín.svg" alt="perfil"></li>
+            <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/icons8-componer-correo-50.png" alt="perfil"></li>
+        </ul>
+    </div>
     </section>
 `
 const quienSoy = `
@@ -126,12 +126,12 @@ const quienSoy = `
     </div>
 </div>
 <div class="contenedor navRight">
-    <ul class="contenedor listIcon"> 
-        <li class="icon icInicio"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
-        <li class="icon icSoy fondo"><a href="#"><img class="iconSoy" src="./sources/icon/persona.png" alt="perfil"></li>
-        <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/maletin.png" alt="perfil"></li>
-        <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/correo.png" alt="perfil"></li>
-    </ul>
+<ul class="contenedor listIcon"> 
+    <li class="icon icInicio"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
+    <li class="icon icSoy fondo"><a href="#"><img class="iconSoy" src="./sources/icon/icons8-user-32.png" alt="perfil"></li>
+    <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/icons8-maletín.svg" alt="perfil"></li>
+    <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/icons8-componer-correo-50.png" alt="perfil"></li>
+</ul>
 </div>
 </section>
 `
@@ -149,33 +149,144 @@ const portafolio = `
 </div>
 
 <div class="contenedor navRight">
-    <ul class="contenedor listIcon"> 
-        <li class="icon icInicio"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
-        <li class="icon icSoy"><a href="#"><img class="iconSoy" src="./sources/icon/persona.png" alt="perfil"></li>
-        <li class="icon icPortafolio fondo"><a href="#"><img class="iconPortafolio" src="./sources/icon/maletin.png" alt="perfil"></li>
-        <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/correo.png" alt="perfil"></li>
-    </ul>
+<ul class="contenedor listIcon"> 
+    <li class="icon icInicio"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
+    <li class="icon icSoy"><a href="#"><img class="iconSoy" src="./sources/icon/icons8-user-32.png" alt="perfil"></li>
+    <li class="icon icPortafolio fondo"><a href="#"><img class="iconPortafolio" src="./sources/icon/icons8-maletín.svg" alt="perfil"></li>
+    <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/icons8-componer-correo-50.png" alt="perfil"></li>
+</ul>
 </div>
 </section>
 ` 
 const contactanos = `
-<section id="quienSoy" class="contenedor secciones seccionContactanos">
-    <div class="contenedor contIncio">
-        <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Correo">
-            <input type="text" placeholder="Tema">
-            <input type="text" placeholder="Observacion">
+<section id="contactanos" class="contenedor secciones seccionContactanos">
+    <div class="contenedor contContactanos">
+        <h2 class="titulo">Ponte en contacto con nosotros</h2>
+        <form class="contenedor formulario" action="">
+            <input class="textoEnviar" type="text" placeholder="Nombre">
+            <input class="textoEnviar" type="text" placeholder="Correo">
+            <input class="textoEnviar" type="text" placeholder="Tema">
+            <textarea class="textoArea" cols="115" rows="10" placeholder="Observaciones"></textarea>
+            <button class="btn botonEnviar">Enviar</button>
         </form>
-
     </div>
+    <footer class="contenedor footerContactanos">
+        <h2 class="titulo">haz tu sueño realidad</h2>
+        <p class="texto">
+        No dude en ponerse en contacto conmigo. Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de sus visiones.</p>
+        <div class="contenedor contRedes">
+            <div class="contenedorMitad contacto">
+                <div class="contenedor correoFooter">
+                    <div class="iconFooter iconCorreo"></div>
+                    <div class="contenedor contactanos">
+                        <p class="texto">Mi Correo</p>
+                        <p class="texto">johansarmiento47@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contenedor telefonoFooter">
+                    <div class="iconFooter iconTelefono"></div>
+                    <div class="contenedor contactanos">
+                        <p class="texto">Llamame</p>
+                        <p class="texto">+57 3172195207</p></div>
+                    </div>
+            </div>
+            <div class="contenedorMitad contIconosFooter">
+                <div class="iconFooter facebock"><a href="#"></a></div>
+                <div class="iconFooter instagram"><a href="#"></a></div>
+                <div class="iconFooter whatsapp"><a href="#"></a></div>
+            </div>
+        </div>
+    </footer>
     <div class="contenedor navRight">
         <ul class="contenedor listIcon"> 
             <li class="icon icInicio"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
-            <li class="icon icSoy"><a href="#"><img class="iconSoy" src="./sources/icon/persona.png" alt="perfil"></li>
-            <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/maletin.png" alt="perfil"></li>
-            <li class="icon icContactanos fondo"><a href="#"><img class="iconContactanos" src="./sources/icon/correo.png" alt="perfil"></li>
+            <li class="icon icSoy"><a href="#"><img class="iconSoy" src="./sources/icon/icons8-user-32.png" alt="perfil"></li>
+            <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/icons8-maletín.svg" alt="perfil"></li>
+            <li class="icon icContactanos fondo"><a href="#"><img class="iconContactanos" src="./sources/icon/icons8-componer-correo-50.png" alt="perfil"></li>
         </ul>
+    </div>
+</section>
+`
+const imprimir = `
+<section id="HojaVida" class="hojaDeVida">
+    <div class="contenedor contHojaVidas">
+        <div class="contenedor header">
+            <div class="contenedor fotoHeader">
+            <img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil">
+            </div>
+            <div class="contenedor textoHeader">
+                <h1>Johan Stevan Sarmiento Cacua</h1>
+                <p>Desarrollador Frond-end con un año de experiencia a la creacion de aplicacion web</p>
+            </div>
+        </div>
+        <div class="contenedor bodyUno">
+            <div class="contenedor infoBodyUno contacto">
+                <h2 class="titulo">CONTACTO</h2>
+                <div class="contenedor contBodyUno">
+                    <div class="contenedor contIcon">
+                    <img class="iconIbucacion" src="./sources/icon/icons8-actualización-de-ubicación-50.png" alt="perfil">
+                    </div>
+                    <p>calle 29A 11E-31 APT 501</p>
+                </div>
+                <div class="contenedor contBodyUno">
+                    <div class="contenedor contIcon">
+                        <img class="iconTelefono" src="./sources/icon/icons8-mensaje-de-telefono-30.png" alt="perfil">      
+                    </div>
+                    <p>+57 3172195207</p>
+                </div>
+                <div class="contenedor contBodyUno">
+                    <div class="contenedor contIcon">
+                        <img class="iconCorreo" src="./sources/icon/icons8-leer-el-mensaje-50.png" alt="perfil">  
+                    </div>
+                    <p>johansarmiento47@gmail.com</p>
+                </div>
+            </div>
+            <div class="contenedor infoBodyUno aptitudes">
+                <h2 class="titulo">APTITUDES</h2>
+                <ul class="contenedor listaAptitudes">
+                    <li>Conocomientos en leguaje de programacion</li>
+                    <li>Conocomientos de frameworks</li>
+                    <li>Aprendizaje Rapido</li>
+                    <li>Resolucion de Problemas </li>
+                </ul>
+            </div>
+            <div class="contenedor infoBodyUno idioma">
+                <h2>IDIOMAS</h2>
+                <P><span>Español:</span> idioma nativo </P>
+                <P><span>Ingles:</span> Aprendiendo </P>
+            </div>
+            <div class="contenedor infoBodyUno formacion">
+                <h2>FORMACION ADICIONAL</h2>
+                <p>Contabilidad sistematizada</p>
+                <p>Curos de Vue Udemy</p>
+            </div>
+        </div>
+
+        
+        <div class="contenedor bodyDos">
+            <div class="contenedor experiencia">
+                <h2 class="titulo">EXPERIENCIA LABORAL</h2>
+                <div>
+                    <P>Desarrollador Frond-end</P>
+                    <P>Coex Bucaramanga</P>
+                    <ul>
+                        <li>Desarrollador Frond-end</li>
+                        <li>Desarrollador Base de Datos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contenedor formacionAcademica">
+            <h2 class="titulo">FORMACION ACADEMICA</h2>
+            <div class="contenedor contabilidad">
+                <p>Contabilidad Sistematizada</p>
+                <p>MariaAuxilidadora</p>
+            </div>
+            <div class="contenedor web">
+                <p>Desarrollador Web</p>
+                <p>COEX</p>
+            </div>
+            </div>
+        </div>
     </div>
 </section>
 `
@@ -196,3 +307,12 @@ render(document.querySelector('body'), inicio);
 cambiarPadian(document.querySelector('.icSoy'), quienSoy);
 cambiarPadian(document.querySelector('.icPortafolio'), portafolio);
 cambiarPadian(document.querySelector('.icContactanos'), contactanos);
+
+document.querySelector("body").addEventListener('keydown', (event)=>{
+    console.log(event.keyCode);
+    if(event.keyCode === 17){
+        document.querySelector(".secciones").remove()
+        render(document.querySelector('body'), imprimir );
+    }
+}
+)

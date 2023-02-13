@@ -56,6 +56,9 @@
     font-size: 2em;
 }
 .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40%;
     height: 50px;
     margin: 10px 20px;
@@ -236,12 +239,12 @@
     background-position: center;
 }
 .pokedex{
-    background-image: url("./sources/");
+    background-image: url("./sources/pokedex.png");
     background-size: cover;
     background-position: center;
 }
 .paginaEjemplo{
-    background-image: url("./sources/construsarHJ.png");
+    background-image: url("./sources/ejemplopagina.png");
     background-size: cover;
     background-position: center;
 }
@@ -249,4 +252,85 @@
     background-image: url("./sources/Triqui.png");
     background-size: cover;
     background-position: center;
+}
+
+/* CONTACTANOS ------------------------------------------------------------------------------------------------------------------ */
+.seccionContactanos{
+    flex-direction: column;
+}
+.contContactanos{
+    flex-direction: column;
+}
+.contRedes{
+    width: 70%;
+    height: 40vh;
+}
+.contacto{
+    flex-direction: column;
+}
+.formulario{
+    width: 70%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.textoEnviar{
+    width: 25%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(49, 49, 49);
+}
+.textoArea{
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(49, 49, 49);
+}
+
+/* FOOTER ------------------------------------------------------------------------------------------------------------------ */
+.footerContactanos{
+    flex-direction: column;
+}
+.texto{
+    color: white;
+}
+
+.contIconosFooter{
+}
+.iconFooter{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.facebock{
+    background-image:url("./sources/icon/icons8-facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.instagram{
+    background-image:url("./sources/icon/icons8-instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.whatsapp{
+    background-image:url("./sources/icon/icons8-whatsapp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.iconCorreo{
+    background-image:url("./sources/icon/icons8-leer-el-mensaje-50.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: red;
+}
+.iconTelefono{
+    background-image:url("./sources/icon/icons8-mensaje-de-telefono-30.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: red;
 }

@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+}
+.hojaDeVida{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.contHojaVidas{
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.header{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(56, 56, 56);
+    justify-content: space-evenly;
+    color: white;
+}
+.textoHeader{
+    width:  70%;
+    flex-direction: column;
+}
+.fotoHeader{
+    width:  30%;
+}
+.bodyUno{
+    width: 40%;
+    height: auto;
+    background-color: rgb(134, 134, 134);
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+.contBodyUno{
+    height: 5vh;    
+    justify-content: flex-start;
+}
+.infoBodyUno{
+    margin-top: 10px;
+    width: 70%;
+    border-top: 1px solid black;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contIcon{
+    width: 20%;
+    height: auto;
+}
+.iconIbucacion{
+    width: 20%;
+    height: 20%;
+}
+.iconTelefono{
+    width: 20%;
+    height: 20%;
+}
+.iconCorreo{
+    width: 20%;
+    height: 20%;
+}
+.bodyDos{
+    width: 60%;
+    height: auto;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 26%;
+}
+.experiencia{
+    flex-direction: column;
+}
+.formacionAcademica{
+    flex-direction: column;
+}
+.formacion{
+    height: 15vh;
+}
+.formacion *{
+    margin: 5px 0;
+}
+.idioma{
+    height: 15vh;
+}
+.idioma *{
+    margin: 5px 0;
+}
+.contacto{
+    align-items: flex-start;
+}
+.aptitudes{
+    height: 25vh;
+    align-items: flex-start;
+}
+.listaAptitudes{
+    margin-top: 20px;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.experiencia{
+    width: 95%;
+    align-items: flex-start;
+    border-top: 1px solid black;
+}
+.experiencia *{
+    margin: 20px 0;
+}
+.formacionAcademica{
+    width: 95%;
+    align-items: flex-start;
+    border-top: 1px solid black;
+}
+.formacionAcademica *{
+    margin: 10px 0;
+}
