@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorMitad{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.btn{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 50px;
+    font-size: 15px;
+    color: red;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+.color{
+    color: red;
+}
+.navRight{
+    left: 90%;
+    bottom: 25%;
+    width: 10%;
+    height: auto;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+}
+.navRight *{
+    list-style: none;
+}
+.listIcon{
+    flex-direction: column;
+    align-items: flex-end;
+}
+.titulo{
+    font-size: 2em;
+}
+.icon{
+    width: 40%;
+    height: 50px;
+    margin: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(27, 26, 26);
+    transition: 0.3s all ease-in-out;
+}
+.icon:hover{
+    padding-left: 150px;
+    transition: 0.3s all ease-in-out;
+}
+.fondo{
+    background-color: red;
+}
+.iconInicio{
+    width: 40%;
+    height: 40%;
+    /* margin: 15px 14px; */
+}
+.iconSoy{
+    width: 40%;
+    height: 40%;
+    /* margin: 7px 7.5px; */
+}
+.iconPortafolio{
+    width: 40%;
+    height: 40%;
+    /* margin: 7px 8px; */
+}
+.iconContactanos{
+    width: 40%;
+    height: 40%;
+    /* margin: 7px 7px; */
+}
+.secciones{
+    font-family: 'Kanit', sans-serif;
+    height: auto;
+    flex-direction: row;
+    background-color: rgb(20, 20, 20);
+}
+.seccionInicio{
+    background-image: linear-gradient(
+        306deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("./sources/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.contIncio{
+    height: 100vh;
+}
+.contIncio *{
+    margin: 15px 0;
+}
+.inicio{
+    font-size: 1.5em;
+    flex-direction: column;
+    color: white;
+}
+
+/* SECCION SOY ------------------------------------------------------------------------------------------------------------ */
+.contQuienSoy{
+    flex-direction: column;
+}
+.titulo{
+    font-size: 2em;
+    margin-top: 8%;
+    color: white;
+}
+.info{
+    margin: 10px 0;
+    color: white;
+}
+.textoInfo{
+    color: white;
+}
+.numeroinfo{
+    font-size: 2em;
+    color: red;
+}
+.colorInfo{
+    color: rgb(119, 119, 119);
+}
+.datosPerso{
+    width: 30%;
+    height: 18vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(80, 79, 79);
+}
+.contSoy{
+    height: 60vh;
+}
+.soyLeft{
+    width: 45%;
+}
+.soyRight{
+    width: 45%;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.infoLeft{
+    height: 50vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.infoRight{
+    width: 45%;
+    height: 50vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.habilidades{
+    height: 80vh;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.contHabilidad{
+    position: relative;
+}
+.contHabilidad p{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color:white;
+}
+.textoHabilidad{
+    margin-top: 60%;
+}
+.habilidad{
+    fill: none;
+    stroke: rgb(66, 66, 66);
+    stroke-width: 10;
+    stroke-dasharray: 100 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+}
+.habilidad:nth-child(2){
+    stroke-dasharray: var(--porcentaje) 100;
+    stroke: red;
+}
+
+/* PORTAFOLIO ---------------------------------------------------------------------------------------------------------------------------------- */
+.contPortafolio{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+.contPorta{
+    flex-wrap: wrap;
+}
+.portafolio{
+    width: 30%;
+    height: 35vh;
+    margin: 20px;
+    border-radius: 20px;
+}
+.construsarHJ{
+    background-image: url("./sources/construsarHJ.png");
+    background-size: cover;
+    background-position: center;
+}
+.Quiz{
+    background-image: url("./sources/construsarHJ.png");
+    background-size: cover;
+    background-position: center;
+}
+.pokedex{
+    background-image: url("./sources/construsarHJ.png");
+    background-size: cover;
+    background-position: center;
+}
+.paginaEjemplo{
+    background-image: url("./sources/construsarHJ.png");
+    background-size: cover;
+    background-position: center;
+}
+.Triqui{
+    background-image: url("./sources/Triqui.png");
+    background-size: cover;
+    background-position: center;
+}
