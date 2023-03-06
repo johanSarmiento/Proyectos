@@ -290,10 +290,12 @@ const imprimir = `
     </div>
 </section>
 `
+
 function render(documentHtml, innerHtml) {
     documentHtml.innerHTML = innerHtml;
 }
 function cambiarPadian(documentHtml, seccion) {
+    console.log(0);
     documentHtml.addEventListener('click', ()=>{
         document.querySelector(".secciones").remove()
         render(document.querySelector('body'), seccion );
