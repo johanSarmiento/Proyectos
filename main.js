@@ -127,7 +127,7 @@ const quienSoy = `
 </div>
 <div class="contenedor navRight">
 <ul class="contenedor listIcon"> 
-    <li class="icon icInicio"><a href="#"><img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
+    <li class="icon icInicio"><a href="#"> ${nombre}<img class="iconInicio" src="./sources/icon/icons8-casa.svg" alt="perfil"></a></li>
     <li class="icon icSoy fondo"><a href="#"><img class="iconSoy" src="./sources/icon/icons8-user-32.png" alt="perfil"></li>
     <li class="icon icPortafolio"><a href="#"><img class="iconPortafolio" src="./sources/icon/icons8-maletín.svg" alt="perfil"></li>
     <li class="icon icContactanos"><a href="#"><img class="iconContactanos" src="./sources/icon/icons8-componer-correo-50.png" alt="perfil"></li>
